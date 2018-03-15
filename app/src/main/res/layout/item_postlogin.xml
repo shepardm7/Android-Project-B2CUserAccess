@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageViewPLogin"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/titlePLoginItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/imageViewPLogin"
+        android:text="Title"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/priceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/priceEditText"
+        android:layout_alignStart="@+id/titlePLoginItem"
+        android:text="Price ($):"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewPLogin"
+        android:layout_alignStart="@+id/priceLabel"
+        android:singleLine="true"
+        android:text="$1000.00"
+        android:focusable="false"
+        android:clickable="false"
+        android:enabled="false"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/discountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/discountEditText"
+        android:layout_alignStart="@+id/discountEditText"
+        android:text="Discount (%):"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/discountEditText"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/priceEditText"
+        android:layout_alignBottom="@+id/imageViewPLogin"
+        android:layout_marginLeft="10dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:enabled="false"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPLogin"
+        style="@android:style/Widget.Holo.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_alignTop="@+id/priceLabel"
+        android:layout_alignParentEnd="true"
+        android:focusable="false"
+        android:clickable="false"/>
+
+</RelativeLayout>

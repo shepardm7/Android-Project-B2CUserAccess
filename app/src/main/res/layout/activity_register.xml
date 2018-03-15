@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.phoenix.b2cuseraccess.registerActivity">
+
+
+    <EditText
+        android:id="@+id/registerEmailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter your E-mail Address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/registerPassText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/registerEmailText"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter your Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/registerPhoneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/registerPassText"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Enter your Phone number"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerPhoneText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Sign Up" />
+</RelativeLayout>
